@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * MageGyver/ApiImprovements
+ *
+ * Avoids duplicate content-type headers due to api requests
+ *
+ * @category    Api
+ * @package     MageGyver
+ * @copyright   Copyright (c) 2013 MageGyver. (http://www.magegyver.de)
+ * @license     http://creativecommons.org/licenses/by-sa/3.0/  CC-by-sa 3.0
+ */
+-->
+<config>
+    <modules>
+        <MageGyver_ApiImprovements>
+            <version>0.0.1</version>
+        </MageGyver_ApiImprovements>
+    </modules>
+    <global>
+        <models>
+            <apiimprovements>
+                <class>MageGyver_ApiImprovements_Model</class>
+            </apiimprovements>
+            <api>
+                <rewrite>
+                    <server_adapter_xmlrpc>MageGyver_ApiImprovements_Model_Server_Adapter_Xmlrpc</server_adapter_xmlrpc>
+                </rewrite>
+            </api>
+
+        </models>
+    </global>
+</config>
