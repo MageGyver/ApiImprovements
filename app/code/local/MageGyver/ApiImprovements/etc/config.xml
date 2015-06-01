@@ -26,6 +26,7 @@
                 <rewrite>
                     <server_adapter_xmlrpc>MageGyver_ApiImprovements_Model_Server_Adapter_Xmlrpc</server_adapter_xmlrpc>
                     <server_adapter_soap>MageGyver_ApiImprovements_Model_Server_Adapter_Soap</server_adapter_soap>
+                    <server_v2_adapter_soap>Fontera_ApiImprovements_Model_Server_V2_Adapter_Soap</server_v2_adapter_soap>
                 </rewrite>
             </api>
 
